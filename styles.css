@@ -1,117 +1,109 @@
 /* General Body Background */
 body {
-  background-color: #f4f4f4;  /* Light gray instead of pure white */
-  color: #333;
+  background-color: #1a1a1a;  /* Dark theme background */
+  color: #e0e0e0;
 }
 
-/* Center the Categories Section */
-.categories-section {
+/* Header Section */
+.header {
+  background-color: #1a1a1a;
+  padding: 30px;  /* Reduce padding */
   text-align: center;
-  margin: 30px auto;
 }
 
-.categories button {
+/* Navigation Bar */
+nav ul {
+  display: flex;
+  justify-content: center;
+  padding: 10px;  /* Reduce padding */
   background-color: #333;
-  color: white;
-  border: 2px solid #28a745;
-  padding: 10px 15px;
-  margin: 5px;
-  border-radius: 20px;
-  cursor: pointer;
 }
 
-.categories button:hover {
-  background-color: #28a745;
+nav ul li {
+  margin-right: 15px;  /* Reduce margin */
 }
 
-/* Project Cards Layout */
+nav ul li a {
+  color: #e0e0e0;
+  font-size: 1.1em;
+}
+
+nav ul li a:hover {
+  color: #28a745;  /* Highlight color */
+}
+
+/* Project Cards Section */
 .project-cards {
   display: flex;
   justify-content: space-around;
-  flex-wrap: wrap;  /* Allow the cards to wrap when the screen size is smaller */
+  flex-wrap: wrap;
   gap: 20px;
-  margin-top: 30px;
+  margin: 20px auto;
+  max-width: 1400px;  /* Ensure it fits within 1920px width */
 }
 
-/* Project Cards */
 .card {
-  background-color: #2a2a2a;
+  background-color: #333;
   color: white;
-  padding: 30px;
-  border-radius: 15px;
-  text-align: center;
-  width: 300px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  margin: 20px 0;
-}
-
-/* Background for Specific Sections */
-.marketplace-section, .staking-section, .categories-section {
-  background-color: #e0e0e0;  /* Light gray background for sections */
   padding: 20px;
   border-radius: 10px;
-  margin-top: 40px;
-}
-
-/* Adding More Space Between Sections */
-section {
-  margin-top: 60px;
-}
-
-/* Ensuring Consistent Button Styles */
-.cta-button, .support-button {
-  padding: 12px 24px;
-  background-color: #28a745;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  font-size: 1.2em;
-  cursor: pointer;
+  text-align: center;
+  width: 250px;  /* Slightly smaller */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
 }
 
 .card img {
   max-width: 100%;
-  height: 120px;
-  margin-bottom: 15px;
+  height: 150px;
 }
 
-.metrics span {
-  display: inline-block;
-  margin: 5px 10px;
-  font-size: 1.1em;
-  vertical-align: middle;
+.card .metrics span {
+  display: block;
+  margin: 5px 0;
 }
 
+/* Compact Support Button */
 .support-button {
-  margin-top: 20px;
-  padding: 12px 20px;
+  padding: 10px 20px;
   background-color: #28a745;
   color: white;
-  border: none;
   border-radius: 5px;
-  cursor: pointer;
-  font-size: 1.1em;
 }
 
 .support-button:hover {
   background-color: #218838;
 }
 
-/* Ensure Footer Text is Centered */
+/* Categories Section */
+.categories-section {
+  background-color: #1f1f1f;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+.categories button {
+  background-color: #333;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  margin: 5px;
+  border-radius: 25px;
+}
+
+.categories button:hover {
+  background-color: #28a745;
+}
+
+/* Footer */
 footer {
   background-color: #333;
   color: white;
-  padding: 20px 0;
+  padding: 20px;
   text-align: center;
-  margin-top: 50px;
 }
 
 footer a {
   color: white;
-  text-decoration: none;
   margin: 0 10px;
-}
-
-footer a:hover {
-  text-decoration: underline;
 }
