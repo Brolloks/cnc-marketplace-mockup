@@ -1,90 +1,4 @@
-/* General Settings */
-body {
-  background-color: #1a1a1a;
-  color: #e0e0e0;
-  font-family: Arial, sans-serif;
-}
-
-h2 {
-  color: #fff;
-}
-
-a, button {
-  cursor: pointer;
-}
-
-/* Navigation Bar */
-nav {
-  background-color: #333;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-}
-
-nav ul {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  justify-content: center;
-}
-
-nav ul li {
-  margin-right: 20px;
-}
-
-nav ul li a {
-  padding: 14px 20px;
-  color: #e0e0e0;
-  text-align: center;
-  text-decoration: none;
-}
-
-nav ul li a.cta-button {
-  background-color: #28a745;
-  color: white;
-  border-radius: 5px;
-}
-
-nav ul li a:hover {
-  background-color: #28a745;
-  color: white;
-}
-
-/* Header Section */
-.header {
-  background-color: #28a745;
-  padding: 50px;
-  text-align: center;
-}
-
-.header-content {
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-.header h1 {
-  font-size: 3em;
-  color: #fff;
-}
-
-.cta-button {
-  padding: 12px 24px;
-  background-color: white;
-  color: #28a745;
-  border: none;
-  border-radius: 5px;
-  font-size: 1.2em;
-  cursor: pointer;
-}
-
-.cta-button:hover {
-  background-color: #fff;
-  color: #28a745;
-  border: 2px solid #28a745;
-}
-
-/* Categories Section */
+/* Center the Categories Section */
 .categories-section {
   text-align: center;
   margin: 30px auto;
@@ -104,7 +18,7 @@ nav ul li a:hover {
   background-color: #28a745;
 }
 
-/* Project Cards */
+/* Update Project Cards for Better Spacing and Layout */
 .project-cards {
   display: flex;
   justify-content: center;
@@ -115,39 +29,43 @@ nav ul li a:hover {
 .card {
   background-color: #2a2a2a;
   color: white;
-  padding: 20px;
+  padding: 30px;
   border-radius: 15px;
   text-align: center;
   width: 250px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin: 20px 0;
 }
 
 .card img {
   max-width: 100%;
   height: 120px;
+  margin-bottom: 15px;
 }
 
 .metrics span {
-  display: block;
-  margin-top: 10px;
-  font-size: 1em;
+  display: inline-block;
+  margin: 5px 10px;
+  font-size: 1.1em;
+  vertical-align: middle;
 }
 
 .support-button {
   margin-top: 20px;
-  padding: 10px 15px;
+  padding: 12px 20px;
   background-color: #28a745;
   color: white;
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  font-size: 1.1em;
 }
 
 .support-button:hover {
   background-color: #218838;
 }
 
-/* Footer */
+/* Ensure Footer Text is Centered */
 footer {
   background-color: #333;
   color: white;
@@ -159,6 +77,7 @@ footer {
 footer a {
   color: white;
   text-decoration: none;
+  margin: 0 10px;
 }
 
 footer a:hover {
