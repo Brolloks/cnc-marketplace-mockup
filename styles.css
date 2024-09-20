@@ -1,15 +1,20 @@
 /* Navigation Bar */
+nav {
+  background-color: #333;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
 nav ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
-  background-color: #333;
-  overflow: hidden;
-  text-align: center;
+  display: flex;
+  justify-content: center;
 }
 
 nav ul li {
-  display: inline;
   margin-right: 20px;
 }
 
@@ -17,7 +22,6 @@ nav ul li a {
   display: inline-block;
   padding: 14px 20px;
   color: white;
-  background-color: #333;
   text-align: center;
   text-decoration: none;
 }
@@ -28,14 +32,48 @@ nav ul li a:hover {
   border-radius: 5px;
 }
 
+/* Header Section */
+.header {
+  background-color: #28a745;
+  padding: 50px;
+  text-align: center;
+  color: white;
+}
+
+.header-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.header h1 {
+  font-size: 3em;
+}
+
+.cta-button {
+  padding: 12px 24px;
+  background-color: white;
+  color: #28a745;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2em;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.cta-button:hover {
+  background-color: #fff;
+  color: #28a745;
+  border: 2px solid #28a745;
+}
+
 /* Staking Section */
 .staking-section {
   text-align: center;
-  margin: 40px auto;
-  padding: 20px;
+  margin: 50px auto;
+  padding: 30px;
   background-color: #f9f9f9;
   border-radius: 10px;
-  width: 50%;
+  width: 60%;
 }
 
 .staking-form {
@@ -50,7 +88,7 @@ nav ul li a:hover {
   width: 200px;
 }
 
-.staking-form button {
+.stake-button {
   padding: 10px 20px;
   background-color: #28a745;
   color: white;
@@ -59,7 +97,7 @@ nav ul li a:hover {
   cursor: pointer;
 }
 
-.staking-form button:hover {
+.stake-button:hover {
   background-color: #218838;
 }
 
@@ -86,6 +124,11 @@ footer a {
 
 footer a:hover {
   text-decoration: underline;
+}
+
+/* General Section Spacing */
+.marketplace-section, .staking-section {
+  margin-top: 50px;
 }
 
 /* Responsive Design */
