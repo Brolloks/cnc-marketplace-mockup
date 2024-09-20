@@ -19,7 +19,7 @@
   </nav>
 
   <!-- Header Section -->
-  <header class="header">
+  <header class="header" id="home">
     <h1>Climate Neutral Cardano Marketplace</h1>
     <p>Empower Climate Action through Blockchain Technology</p>
     <button class="cta-button">Join Now</button>
@@ -44,8 +44,10 @@
   <!-- Staking Section -->
   <section class="staking-section">
     <h2>Stake ADA and Earn Rewards</h2>
-    <input type="number" id="stakeAmount" placeholder="Enter ADA to stake" />
-    <button onclick="simulateStaking()">Stake Now</button>
+    <div class="staking-form">
+      <input type="number" id="stakeAmount" placeholder="Enter ADA to stake" />
+      <button onclick="simulateStaking()">Stake Now</button>
+    </div>
     <p id="rewardMessage"></p>
   </section>
 

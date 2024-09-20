@@ -1,69 +1,106 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
-  }
-  
-  .header {
-    background-color: #28a745;
-    padding: 20px;
-    text-align: center;
-    color: white;
-  }
-  
-  .cta-button {
-    padding: 10px 20px;
-    background-color: #fff;
-    color: #28a745;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  .marketplace-section {
-    padding: 40px;
-    background-color: #fff;
-    text-align: center;
-  }
-  
-  .project-cards {
-    display: flex;
-    justify-content: space-around;
-  }
-  
-  .card {
-    background-color: #e9ecef;
-    padding: 20px;
-    border-radius: 10px;
-    width: 300px;
-  }
-  
-  .fund-button {
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+/* Navigation Bar */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  background-color: #333;
+  overflow: hidden;
+  text-align: center;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  display: inline-block;
+  padding: 14px 20px;
+  color: white;
+  background-color: #333;
+  text-align: center;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  background-color: #28a745;
+  color: white;
+  border-radius: 5px;
+}
+
+/* Staking Section */
+.staking-section {
+  text-align: center;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  width: 50%;
+}
+
+.staking-form {
+  margin: 20px 0;
+}
+
+.staking-form input {
+  padding: 10px;
+  border: 2px solid #28a745;
+  border-radius: 5px;
+  margin-right: 10px;
+  width: 200px;
+}
+
+.staking-form button {
+  padding: 10px 20px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.staking-form button:hover {
+  background-color: #218838;
+}
+
+#rewardMessage {
+  font-size: 16px;
+  margin-top: 15px;
+  color: #28a745;
+}
+
+/* Footer */
+footer {
+  background-color: #333;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+  margin-top: 50px;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .staking-section {
+    width: 90%;
   }
 
-  .cta-button:hover {
-    background-color: #fff;
-    color: #28a745;
-    border: 2px solid #28a745;
+  .project-cards {
+    flex-direction: column;
+    align-items: center;
   }
-  
-  @media (max-width: 768px) {
-    .project-cards {
-      flex-direction: column;
-      align-items: center;
-    }
-  
-    .card {
-      width: 90%;
-      margin-bottom: 20px;
-    }
+
+  .card {
+    width: 90%;
+    margin-bottom: 20px;
   }
-  
+}
